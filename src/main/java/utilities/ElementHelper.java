@@ -88,7 +88,7 @@ public class ElementHelper {
 
 
 
-/* cüneyt
+/*
  public void scroll(By locator){
         JavascriptExecutor js = (JavascriptExecutor) driver;
         RemoteWebElement element =(RemoteWebElement)driver.findElement(locator);
@@ -99,7 +99,7 @@ public class ElementHelper {
     }
  */
 
-        /* fatih
+        /*
         while (true) {
             if (driver.findElements(vercitasLocate).size() > 0) {
                 driver.findElement(vercitasLocate).click();
