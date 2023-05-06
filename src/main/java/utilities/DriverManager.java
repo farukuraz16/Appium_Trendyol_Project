@@ -43,7 +43,9 @@ public class DriverManager {
             case "android":
                 capabilities.setCapability("platformName", "Android");
                 capabilities.setCapability("udid", "emulator-5554");
-                capabilities.setCapability( "app", "/Users/faruk/Downloads/trendyol.com-6.28.2.682-free-www.apksum.com.apk");
+                //capabilities.setCapability( "app", "/Users/faruk/Downloads/trendyol.com-6.28.2.682-free-www.apksum.com.apk");
+                capabilities.setCapability( "appActivity", "com.trendyol.common.splash.impl.ui.SplashActivity");
+                capabilities.setCapability( "appPackage", "trendyol.com");
                 capabilities.setCapability("noReset", true);
 
                 try {

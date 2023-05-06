@@ -16,4 +16,6 @@ public class FilterPageSteps {
     public void userTapsÜRÜNLERİLİSTELEButtonOnFilterPage() {
         filterPage.listAllResults();
     }
+
+
 }

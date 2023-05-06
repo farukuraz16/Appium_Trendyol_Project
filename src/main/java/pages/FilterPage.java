@@ -9,6 +9,7 @@ public class FilterPage {
     ElementHelper elementHelper;
 
     By freeShippingFilter = By.id("trendyol.com:id/filterName");
+    By filterList = By.id("trendyol.com:id/relativeLayoutFilterItem");
     By checkBox = By.id("trendyol.com:id/checkBoxSpecialFilter");
     By listProducts = By.id("trendyol.com:id/btnApplyFilter");
 
@@ -24,6 +25,8 @@ public class FilterPage {
     public void listAllResults() {
         elementHelper.click(listProducts);
     }
+
+
 
 
 }
