@@ -11,7 +11,7 @@ public class ConfigReader {
 
     public static String getProperty(String key) {
         String value = "";
-        try (InputStream input = new FileInputStream("src/main/java/resources/config.properties")) {
+        try (InputStream input = new FileInputStream("src/test/resources/config.properties")) {
             properties.load(input);
             value = properties.getProperty(key);
         } catch (IOException ex) {
