@@ -1,0 +1,25 @@
+2023-10-10 09:28:55 INFO  Log:37 - -Test started-
+2023-10-10 09:33:27 INFO  Log:37 - Test Case started: Search Product Check Cart
+2023-10-10 09:33:35 INFO  Log:37 - -Test started-
+2023-10-10 09:37:40 INFO  Log:% - Test Case started: Search Product Check Cart
+2023-10-10 09:37:49 INFO  Log:% - -Test started-
+2023-10-10 09:39:35 INFO  - Test Case started: Search Product Check Cart
+2023-10-10 09:39:42 INFO  - -Test started-
+2023-10-10 09:40:59 INFO  - Test Case started: Search Product Check Cart
+2023-10-10 09:41:08 INFO  - -Test started-
+2023-10-10 09:43:28 INFO  - Test started. Tag: [@Appium_Trendyol, @SearchAndCheckCart]-Search Product Check Cart
+2023-10-10 09:45:43 INFO  - Tag: [@Appium_n11, @SearchAndCheckCart] Scenario: Search Product Check Cart
+2023-10-10 09:46:36 INFO  - Tag: Search Product Check Cart Scenario: Search Product Check Cart
+2023-10-10 09:46:57 INFO  - Tag: PASSED Scenario: Search Product Check Cart
+2023-10-10 09:49:05 INFO  - Scenario: Search Product Check Cart
+2023-10-10 09:49:40 INFO  - Result: FAILED
+2023-10-10 09:50:51 INFO  - Scenario: Search Product Check Cart is started.
+2023-10-10 09:51:25 INFO  - Search Product Check Cart--> Result: FAILED
+2023-10-10 09:52:09 INFO  - Scenario is started: Search Product Check Cart
+2023-10-10 09:52:45 INFO  - Search Product Check Cart--> Result: FAILED
+2023-10-10 10:00:53 INFO  - Scenario is started: "Search Product Check Cart"
+2023-10-10 10:01:34 INFO  - "Search Product Check Cart" --> Result: FAILED
+2023-10-10 10:19:49 INFO  - Scenario is started: "Search Product"
+2023-10-10 10:19:49 INFO  - Scenario: "Search Product" --> Result: FAILED
+2023-10-10 10:22:51 INFO  - Scenario is started: "Search Product"
+2023-10-10 10:23:25 INFO  - Scenario: "Search Product" --> Result: FAILED
