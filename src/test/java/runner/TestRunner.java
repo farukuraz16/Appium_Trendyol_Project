@@ -7,7 +7,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.*;
 
 @CucumberOptions(
-        tags = "@SearchAndCheckCart",
+        tags = "@Search",
         features = "src/test/resources/features",
         glue = {"stepdefinitions", "utilities"},
         plugin = {

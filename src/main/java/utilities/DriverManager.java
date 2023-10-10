@@ -1,7 +1,6 @@
 package utilities;
 
 import io.appium.java_client.AppiumDriver;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -33,19 +32,18 @@ public class DriverManager {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         switch (browser) {
             case "chrome":
-                WebDriverManager.chromedriver().setup();
+
                 driver = new ChromeDriver();
                 break;
             case "firefox":
-                WebDriverManager.firefoxdriver().setup();
                 driver = new FirefoxDriver();
                 break;
             case "android":
                 capabilities.setCapability("platformName", "Android");
                 capabilities.setCapability("udid", "emulator-5554");
-                //capabilities.setCapability( "app", "/Users/faruk/Downloads/trendyol.com-6.28.2.682-free-www.apksum.com.apk");
-                capabilities.setCapability( "appActivity", "com.trendyol.common.splash.impl.ui.SplashActivity");
-                capabilities.setCapability( "appPackage", "trendyol.com");
+                capabilities.setCapability( "app", "/Users/faruk/Documents/Abeyis/n11-com-15-2-0.apk");
+                //capabilities.setCapability( "appActivity", "com.dmall.mfandroid.activity.base.NewSplash");
+                capabilities.setCapability( "appPackage", "com.dmall.mfandroid");
                 capabilities.setCapability("noReset", true);
 
                 try {

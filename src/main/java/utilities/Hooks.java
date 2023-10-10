@@ -8,9 +8,12 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
+
 import java.io.IOException;
 
+
 public class Hooks {
+
     private WebDriver driver;
 
     // Cucumber Hooks
@@ -23,7 +26,8 @@ public class Hooks {
     }
 
     @Before()
-    public void beforeScenario() {
+    public void beforeScenario(Scenario scenario) {
+        Log.info("Scenario is started: " + "\"" +scenario.getName()+"\"");
         String browser = ConfigReader.getProperty("browser");
         String url = ConfigReader.getProperty("url");
         String implicityWait = ConfigReader.getProperty("implicityWait");
@@ -32,11 +36,18 @@ public class Hooks {
 
     @After()
     public void afterScenario(Scenario scenario) {
+        Log.info("Scenario: \""+scenario.getName()+"\"" + " --> Result: "+scenario.getStatus());
+        if (scenario.isFailed()) {
+            final byte[] screenshot = ((TakesScreenshot) DriverManager.getDriver()).getScreenshotAs(OutputType.BYTES);
+
+            scenario.attach(screenshot, "image/png", "Screenshots");
+
+        }
         // Cucumber after hook code
         DriverManager.quitDriver();
-        if (scenario.isFailed()) {
-            ExtentCucumberAdapter.getCurrentStep().log(Status.FAIL, MediaEntityBuilder.createScreenCaptureFromBase64String(getBase64Screenshot()).build());
-        }
+//        if (scenario.isFailed()) {
+  //          ExtentCucumberAdapter.getCurrentStep().log(Status.FAIL, MediaEntityBuilder.createScreenCaptureFromBase64String(getBase64Screenshot()).build());
+    //    }
     }
 
     @BeforeStep
